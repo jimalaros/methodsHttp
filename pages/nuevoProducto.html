@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/formulario.css">
+    
+    <title>Nuevo Producto</title>
+</head>
+<body>
+
+    <div id="containerNav"></div>
+
+    <div class="principal">
+        <div class="form-container">
+            <form id='formulario' class="form form-group bg-light">
+                <div>
+                    <label for="img" class="label">IMAGEN: </label>
+                    <input type="text" id="imagenProducto" placeholder="https://i1.sndcdn.com/artworks-000132781887-n6b3i9-t500x500.jpg" class="input input-dato"/>
+                    <label for="nombreProducto" class="label">NOMBRE:</label>
+                    <input type="text" id="nombreProducto" placeholder="Camiseta" class="input input-dato"/>
+                    <label for="categoria" class="label">CATEGORIA:</label>
+                    <input type="text" id="categoriaProducto" placeholder="MASCULINO" class="input input-dato"/>
+                    <label for="precio" class="label">precio:</label>
+                    <input type="text" id="precioProducto" placeholder="35000" class="input input-dato"/>
+
+                    <button type="submit" class="btn d-flex btn-outline-dark text-center">Agregar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <section id="containerProducts" class="m-5"></section>
+
+    <script src="../js/nuevoProducto.js" type="module" crossorigin="anonymous"></script>
+</body>
+</html>
